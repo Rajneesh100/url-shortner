@@ -9,12 +9,11 @@ This project provides a basic URL-shortening service implemented in Go. It allow
 
 ## Installation
 
-To use the URL shortener, you need to have Go installed on your system. You can download and install Go from the [official Go website](https://go.dev/).
-
+To use the URL shortener, you need to have Go installed on your system.
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/Prince-1501/url-shortner.git
+git clone https://github.com/Rajneesh100/url-shortner.git
 ```
 
 ## Usage
@@ -54,8 +53,6 @@ curl http://localhost:8080/redirect/abcdef
 ```
 
 This will redirect you to the original URL associated with the shortened URL.
-
-## Contributing
 
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
