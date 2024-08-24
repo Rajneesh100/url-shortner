@@ -17,14 +17,6 @@ type URL struct {
 	CreationDate time.Time `json:"creation_date"`
 }
 
-/*
-	d9736711 --> {
-					ID: "d9736711",
-					OriginalURL: "https://github.com/Prince-1501/",
-					ShortURL: "d9736711",
-					CreationDate: time.Now()
-				}
-*/
 var urlDB = make(map[string]URL)
 
 func generateShortURL(OriginalURL string) string {
@@ -93,7 +85,6 @@ func redirectURLHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// fmt.Println("Starting URL shortener...")
 	OriginalURL := "https://github.com/Prince-1501/url-shortner/blob/main/go.mod"
 	generateShortURL(OriginalURL)
 
